@@ -1,4 +1,4 @@
-PROD_BUCKET=southside.ctl.columbia.edu
+PROD_BUCKET=southside.ccnmtl.columbia.edu
 S3CMD ?= s3cmd
 S3_FLAGS ?= --acl-public --delete-removed --no-progress --no-mime-magic --guess-mime-type
 
