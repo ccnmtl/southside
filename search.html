@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+<title>Southside Chicago - Advanced Search</title>
+<style type="text/css">
+  a#searchlink { display:none; }
+</style>
+    <style type="text/css">
+        #pageLogin
+        {
+            font-size: 10px;
+            font-family: verdana;
+            text-align: right;
+        }
+    </style>
+    <style media="screen" type="text/css">
+@import "static/css/style.css";
+</style>
+</head>
+<body>
+<!-- ### Header -->
+	<div id="header">
+		<div id="inner">
+			<div id="content">
+				<div id="paper">
+					<div id="paperinner">
+						<div id="papercontent">
+							<div id="trace">
+								<h1 id="sitetitle"><a href="index.html" title="Southside Chicago Home"><span>Southside Chicago</span></a></h1>
+								<h2 id="ccnmtl_logo"><a href="http://ccnmtl.columbia.edu/" title="CCNMTL Website"><span>Columbia Center for New Media Teaching and Learning</span></a></h2>
+								<ul>
+									<li><a href="about.html">About</a></li>
+									<li><a href="help.html">Help</a></li>
+								</ul>
+							</div><!-- id="trace" -->
+						</div><!-- id="papercontent" -->
+					</div><!-- id="paperinner" -->
+				</div><!-- id="paper" -->
+			</div><!-- id="content" -->
+		</div><!-- id="inner" -->
+	</div><!-- id="header" -->
+<!-- ### End Header -->
+<!-- ### Global Navigation -->
+	<div id="globalnav">
+		<div id="inner">
+			<div id="content">
+				<ul>
+					<li class="active"><a href="index.html" title="Southside Chicago Archive">Archive</a></li>
+				</ul>
+			</div><!-- id="content" -->
+		</div><!-- id="inner" -->
+	</div><!-- id="globalnav" -->
+<!-- ### End Global Navigation -->
+<!-- ### Pagebody -->
+	<div id="pagebody">
+		<div id="inner">
+			<div id="content">
+<h2 id="pagetitle">Advanced Search</h2>
+<p><b>For quick searches...</b></p>
+<form action="search.html" method="post">
+	<input type="text" class="searchbox" name="search_string" size="18"> 
+	<input style="font-weight: bold;" type="submit" id="submit" value="Quick search" class="regButton">
+</form>
+<br>
+<!-- Hide for now
+<p>You can use the "quick search" text box for simple searches (e.g. words, quoted phrases), or input full Lucene syntax.  <a href="http://www.shadocms.com/shadozoom/documentation/shadocms-documentation/developer-guide/site-search/lucene-query-syntax.cfm">Lucene reference</a>.</p>
+ -->
+<!-- TODO: search by date -->
+<hr>
+<p><b>Find newspaper pages that have...</b></p>
+    <form action="search.html" method="post">
+           ...with any of the words: <input type="text" name="search_any" class="textbox"><br>
+           ...with all of the words: <input type="text" name="search_all" class="textbox"><br>
+           ...with the exact phrase: <input type="text" name="search_phrase" class="textbox"><br>
+           ...with the words <input type="text" name="search_neighbors" class="textbox"> within
+           <select name="prox_distance">
+              <option value="3">3</option>
+              <option selected value="5">5</option>
+              <option value="10">10</option>
+           </select> words of each other<br><br> 
+      Show <select name="rows">
+         <option selected value="10">10</option>
+         <option value="25">25</option>
+         <option value="50">50</option>
+         <option value="100">100</option>
+      </select> results per page.<br><br>      
+                <input type="submit" id="submit" value="Advanced search" class="regButton">
+   </form>
+				<div class="clearing"> </div>
+				<!-- End of main_content -->
+			</div><!-- id="content" -->
+		</div><!-- id="inner" -->
+	</div><!-- id="pagebody" -->
+<!-- ### End Pagebody -->
+<!-- ### Footer -->
+	<div id="footer">
+		<div id="inner">
+			<div id="content">
+			</div><!-- id="content" -->
+		</div><!-- id="inner" -->
+	</div>
+<!-- ### End Footer -->
+</body>
+</html>
